@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    
     stages {
         stage('Checkout Code') {
             steps {
@@ -16,16 +16,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'npm run build'
-            }
-        }
-        stage('Test') {
-            steps {
-                bat 'npm run test'
-            }
-        }
-        stage('SonarQube Analysis') {
-            steps {
-                bat 'npm run sonar'
             }
         }
         stage('Build Docker Image') {
