@@ -1,3 +1,3 @@
-#!/usr/bin/env sh
+#!C:\Program Files\nodejs sh
 
 kill $(cat .pidfile)

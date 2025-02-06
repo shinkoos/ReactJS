@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!C:\Program Files\nodejs sh
 
 npm run build
 
