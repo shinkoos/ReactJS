@@ -18,7 +18,12 @@ pipeline {
                 bat 'npm run build'
             }
         }
-        stage('Deploy') {
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker build -t react-jenkins-pipeline .'
+            }
+        }
+                stage('Deploy') {
             steps {
                 bat 'npm run start'
             }
